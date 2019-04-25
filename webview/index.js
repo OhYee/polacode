@@ -60,11 +60,11 @@
     document.getElementById('snippet').style.backgroundColor = snippetBgColor
 
     // update backdrop color
-    if (isDark(snippetBgColor)) {
-      snippetContainerNode.style.backgroundColor = '#f2f2f2'
-    } else {
-      snippetContainerNode.style.background = 'none'
-    }
+    // if (isDark(snippetBgColor)) {
+    //   snippetContainerNode.style.backgroundColor = '#f2f2f2'
+    // } else {
+    //   snippetContainerNode.style.background = 'none'
+    // }
   }
 
   function getMinIndent(code) {
@@ -170,11 +170,11 @@
 
         // update backdrop color, using bgColor from last pasted snippet
         // cannot deduce from initialHtml since it's always using Nord color
-        if (isDark(bgColor)) {
-          snippetContainerNode.style.backgroundColor = '#f2f2f2'
-        } else {
-          snippetContainerNode.style.background = 'none'
-        }
+        // if (isDark(bgColor)) {
+        //   snippetContainerNode.style.backgroundColor = '#f2f2f2'
+        // } else {
+        //   snippetContainerNode.style.background = 'none'
+        // }
 
       } else if (e.data.type === 'update') {
         document.execCommand('paste')
